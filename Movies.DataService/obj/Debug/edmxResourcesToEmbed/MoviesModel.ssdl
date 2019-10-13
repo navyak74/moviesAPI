@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComcastModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CUSTOMERTABLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIRSTNAME" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="LASTNAME" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="ISACTIVE" Type="bit" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GENRESTABLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GENRES" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ISACTIVE" Type="bit" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MOVIEGENRESTABLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MOVIEID" Type="bigint" Nullable="false" />
+    <Property Name="GENRESID" Type="bigint" Nullable="false" />
+    <Property Name="ISACTIVE" Type="bit" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MOVIESTABLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="YEAROFRELEASE" Type="int" Nullable="false" />
+    <Property Name="RUNNINGTIME" Type="int" Nullable="false" />
+    <Property Name="ISACTIVE" Type="bit" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RATINGTABLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CUSTOMERID" Type="bigint" Nullable="false" />
+    <Property Name="MOVIEID" Type="bigint" Nullable="false" />
+    <Property Name="RATING" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="ISACTIVE" Type="bit" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ComcastModelStoreContainer">
+    <EntitySet Name="CUSTOMERTABLE" EntityType="Self.CUSTOMERTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GENRESTABLE" EntityType="Self.GENRESTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MOVIEGENRESTABLE" EntityType="Self.MOVIEGENRESTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MOVIESTABLE" EntityType="Self.MOVIESTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RATINGTABLE" EntityType="Self.RATINGTABLE" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

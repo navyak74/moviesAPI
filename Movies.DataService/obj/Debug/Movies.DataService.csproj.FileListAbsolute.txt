@@ -1,0 +1,16 @@
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Comcast.mdf
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Comcast_log.ldf
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Movies.DataService.dll.config
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Movies.DataService.dll
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Movies.DataService.pdb
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\EntityFramework.dll
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Movies.Model.dll
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\Movies.Model.pdb
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\EntityFramework.xml
+C:\Users\af12278\source\repos\Movies.DataService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\af12278\source\repos\Movies.DataService\obj\Debug\Movies.DataService.csprojAssemblyReference.cache
+C:\Users\af12278\source\repos\Movies.DataService\obj\Debug\Movies.DataService.csproj.CoreCompileInputs.cache
+C:\Users\af12278\source\repos\Movies.DataService\obj\Debug\Movies.DataService.csproj.CopyComplete
+C:\Users\af12278\source\repos\Movies.DataService\obj\Debug\Movies.DataService.dll
+C:\Users\af12278\source\repos\Movies.DataService\obj\Debug\Movies.DataService.pdb

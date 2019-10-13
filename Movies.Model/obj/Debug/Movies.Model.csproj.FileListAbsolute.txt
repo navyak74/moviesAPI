@@ -1,0 +1,6 @@
+C:\Users\af12278\source\repos\Movies.Model\bin\Debug\Movies.Model.dll
+C:\Users\af12278\source\repos\Movies.Model\bin\Debug\Movies.Model.pdb
+C:\Users\af12278\source\repos\Movies.Model\obj\Debug\Movies.Model.csprojAssemblyReference.cache
+C:\Users\af12278\source\repos\Movies.Model\obj\Debug\Movies.Model.csproj.CoreCompileInputs.cache
+C:\Users\af12278\source\repos\Movies.Model\obj\Debug\Movies.Model.dll
+C:\Users\af12278\source\repos\Movies.Model\obj\Debug\Movies.Model.pdb

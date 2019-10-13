@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ComcastModelStoreContainer" CdmEntityContainer="ComcastEntities">
+    <EntitySetMapping Name="CUSTOMERTABLEs">
+      <EntityTypeMapping TypeName="ComcastModel.CUSTOMERTABLE">
+        <MappingFragment StoreEntitySet="CUSTOMERTABLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+          <ScalarProperty Name="LASTNAME" ColumnName="LASTNAME" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENRESTABLEs">
+      <EntityTypeMapping TypeName="ComcastModel.GENRESTABLE">
+        <MappingFragment StoreEntitySet="GENRESTABLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GENRES" ColumnName="GENRES" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIEGENRESTABLEs">
+      <EntityTypeMapping TypeName="ComcastModel.MOVIEGENRESTABLE">
+        <MappingFragment StoreEntitySet="MOVIEGENRESTABLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MOVIEID" ColumnName="MOVIEID" />
+          <ScalarProperty Name="GENRESID" ColumnName="GENRESID" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIESTABLEs">
+      <EntityTypeMapping TypeName="ComcastModel.MOVIESTABLE">
+        <MappingFragment StoreEntitySet="MOVIESTABLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="YEAROFRELEASE" ColumnName="YEAROFRELEASE" />
+          <ScalarProperty Name="RUNNINGTIME" ColumnName="RUNNINGTIME" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RATINGTABLEs">
+      <EntityTypeMapping TypeName="ComcastModel.RATINGTABLE">
+        <MappingFragment StoreEntitySet="RATINGTABLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CUSTOMERID" ColumnName="CUSTOMERID" />
+          <ScalarProperty Name="MOVIEID" ColumnName="MOVIEID" />
+          <ScalarProperty Name="RATING" ColumnName="RATING" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
